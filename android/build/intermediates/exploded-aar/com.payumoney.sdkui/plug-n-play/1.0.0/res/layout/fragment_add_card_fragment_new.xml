@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/payumoney_white"
+            android:clickable="true"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_1dp"
+            android:paddingRight="@dimen/dimen_1dp"
+            android:paddingBottom="@dimen/dimen_1dp">
+
+            <include
+                android:id="@+id/amount_layout"
+                layout="@layout/amount_layout"
+                android:visibility="visible"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/add_card_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_18dp"
+                android:layout_marginRight="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                app:cardBackgroundColor="@color/card_bg_color"
+                app:cardCornerRadius="@dimen/dimen_8dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                card_view:cardElevation="@dimen/dimen_5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_card_bankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_2dp">
+
+                        <com.payumoney.sdkui.ui.widgets.FlipImageView
+                            android:id="@+id/add_bank_logo"
+                            android:layout_width="@dimen/dimen_30dp"
+                            android:layout_height="@dimen/dimen_30dp" />
+
+                        <TextView
+                            android:id="@+id/add_card_bankname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:gravity="center"
+                            android:text="@string/label_bank_name"
+                            android:textSize="@dimen/dimen_20sp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/add_card_cardNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/layout_card_bankName"
+                        android:layout_alignStart="@+id/layout_card_bankName"
+                        android:layout_below="@+id/layout_card_bankName"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:background="@drawable/edit_bg"
+                        android:digits="0123456789"
+                        android:ems="11"
+                        android:hint="@string/label_enter_card_no"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions|number"
+                        android:maxLines="@integer/int_1"
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_5dp"
+                        android:paddingStart="@dimen/dimen_5dp"
+                        android:textSize="@dimen/dimen_16sp"
+                        android:theme="@style/EditTextLineColor" />
+
+                    <ImageView
+                        android:id="@+id/img_info_about_card"
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_alignBottom="@+id/add_card_cardNumber"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:clickable="false"
+                        android:src="@drawable/ic_info_black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_error_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/add_card_cardNumber"
+                        android:layout_alignStart="@+id/add_card_cardNumber"
+                        android:layout_below="@+id/add_card_cardNumber"
+                        android:text="@string/err_enter_card_number"
+                        android:textColor="@color/color_error"
+                        android:textSize="@dimen/dimen_12sp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/layout_card_bankName"
+                        android:layout_alignStart="@+id/layout_card_bankName"
+                        android:layout_below="@+id/tv_error_card_number"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:weightSum="100">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="90">
+
+                            <com.payumoney.core.widget.ExpiryDate
+                                android:id="@+id/add_card_cardExpiry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:background="@drawable/edit_bg"
+                                android:digits="0123456789"
+                                android:hint="@string/hint_card_expiry"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:lines="@integer/int_1"
+                                android:maxLength="5"
+                                android:paddingLeft="@dimen/dimen_5dp"
+                                android:paddingRight="@dimen/dimen_5dp"
+                                android:paddingStart="@dimen/dimen_5dp"
+                                android:textSize="@dimen/dimen_16sp"
+                                android:theme="@style/EditTextLineColor" />
+
+                            <TextView
+                                android:id="@+id/tv_error_expiry_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/add_card_cardExpiry"
+                                android:layout_alignStart="@+id/add_card_cardExpiry"
+                                android:layout_below="@+id/add_card_cardExpiry"
+                                android:text="@string/err_enter_expiry_date"
+                                android:textColor="@color/color_error"
+                                android:textSize="@dimen/dimen_12sp"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/add_card_cardCvv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_10dp"
+                                android:layout_marginStart="@dimen/dimen_10dp"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_toEndOf="@+id/tv_error_expiry_date"
+                                android:layout_toRightOf="@+id/tv_error_expiry_date"
+                                android:background="@drawable/edit_bg"
+                                android:digits="0123456789"
+                                android:ems="4"
+                                android:hint="@string/cvv"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberPassword"
+                                android:lines="@integer/int_1"
+                                android:maxLength="4"
+                                android:paddingLeft="@dimen/dimen_5dp"
+                                android:paddingRight="@dimen/dimen_5dp"
+                                android:paddingStart="@dimen/dimen_5dp"
+                                android:textSize="@dimen/dimen_16sp"
+                                android:theme="@style/EditTextLineColor" />
+
+                            <TextView
+                                android:id="@+id/tv_error_cvv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/add_card_cardCvv"
+                                android:layout_alignStart="@+id/add_card_cardCvv"
+                                android:layout_below="@+id/add_card_cardCvv"
+                                android:text="@string/enter_your_cvv"
+                                android:textColor="@color/color_error"
+                                android:textSize="@dimen/dimen_12sp"
+                                android:visibility="invisible" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal">
+
+                            <com.payumoney.sdkui.ui.widgets.FlipImageView
+                                android:id="@+id/add_card_cardType_image"
+                                android:layout_width="@dimen/dimen_45dp"
+                                android:layout_height="@dimen/dimen_45dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="@dimen/dimen_7dp"
+                                android:clickable="false"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+                android:id="@+id/btn_pay_quick_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/add_card_card_view"
+                android:layout_alignRight="@+id/add_card_card_view"
+                android:layout_below="@+id/add_card_card_view"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:text="@string/quick_pay_amount"
+                android:textColor="@color/payumoney_white"
+                android:textSize="@dimen/dimen_17sp"
+                pptextview:bgColor="?attr/colorPrimary"
+                pptextview:borderOnly="false" />
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

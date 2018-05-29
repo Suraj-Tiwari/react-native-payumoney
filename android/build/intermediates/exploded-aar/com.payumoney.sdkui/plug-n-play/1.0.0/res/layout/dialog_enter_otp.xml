@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="@dimen/dimen_16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/txt_otp_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="@string/label_otp_board_msg"
+            android:textColor="#F55625"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <LinearLayout
+            android:id="@+id/txt_layout_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_otp_message"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:orientation="horizontal">
+
+            <com.payumoney.sdkui.ui.widgets.OtpEditText
+                android:id="@+id/otpEdit_box1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_grey_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeActionId="@+id/otpEdit_box2"
+                android:imeOptions="actionNext"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="2"
+                android:nextFocusRight="@id/otpEdit_box2"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:tag="1"
+                android:textColor="@color/otpTextColor"
+                android:textSize="30sp" />
+
+            <com.payumoney.sdkui.ui.widgets.OtpEditText
+                android:id="@+id/otpEdit_box2"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_grey_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeActionId="@+id/otpEdit_box3"
+                android:imeOptions="actionNext"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="2"
+                android:nextFocusLeft="@id/otpEdit_box1"
+                android:nextFocusRight="@id/otpEdit_box3"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:tag="2"
+                android:textColor="@color/otpTextColor"
+                android:textSize="30sp" />
+
+            <com.payumoney.sdkui.ui.widgets.OtpEditText
+                android:id="@+id/otpEdit_box3"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_grey_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeActionId="@+id/otpEdit_box4"
+                android:imeOptions="actionNext"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="2"
+                android:nextFocusLeft="@id/otpEdit_box2"
+                android:nextFocusRight="@id/otpEdit_box4"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:tag="3"
+                android:textColor="@color/otpTextColor"
+                android:textSize="30sp" />
+
+            <com.payumoney.sdkui.ui.widgets.OtpEditText
+                android:id="@+id/otpEdit_box4"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_grey_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="2"
+                android:nextFocusLeft="@id/otpEdit_box3"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:tag="4"
+                android:textColor="@color/otpTextColor"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otp_error"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_layout_otp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_error"
+            android:textSize="@dimen/dimen_14sp"
+            android:visibility="invisible" />
+
+
+        <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+            android:id="@+id/btn_confirm_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_12dp"
+            android:paddingLeft="@dimen/dimen_30dp"
+            android:paddingRight="@dimen/dimen_30dp"
+            android:paddingTop="@dimen/dimen_12dp"
+            android:text="@string/btn_confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_18sp"
+            pptextview:bgColor="?attr/colorPrimary"
+            pptextview:borderOnly="false" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

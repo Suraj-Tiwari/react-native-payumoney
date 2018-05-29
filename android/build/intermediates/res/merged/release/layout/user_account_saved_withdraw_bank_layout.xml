@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/withdraw_bank_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/savedBankOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_bg_color"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingEnd="@dimen/dimen_0dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_0dp"
+        android:paddingStart="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:text="@string/withdraw_money_to"
+        android:textColor="@color/payumoney_black"
+        android:textSize="@dimen/dimen_17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/payumoney_white">
+
+        <LinearLayout
+            android:id="@+id/saved_withdraw_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_15dp">
+
+                <LinearLayout
+                    android:id="@+id/withdraw_bank_image_layout"
+                    android:layout_width="@dimen/dimen_68dp"
+                    android:layout_height="@dimen/dimen_68dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rectangle_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_5dp">
+
+                    <ImageView
+                        android:id="@+id/withdraw_bank_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wallet_small" />
+
+                    <TextView
+                        android:id="@+id/withdraw_bank_image_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="@string/label_bank"
+                        android:textColor="@color/payumoney_black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_toEndOf="@+id/withdraw_bank_image_layout"
+                    android:layout_toLeftOf="@+id/withdraw_change_bank"
+                    android:layout_toRightOf="@+id/withdraw_bank_image_layout"
+                    android:layout_toStartOf="@+id/withdraw_change_bank"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/withdraw_bank_holderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:lines="@integer/int_1"
+                        android:text="@string/label_bank_name"
+                        android:textColor="@color/payumoney_black"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/withdraw_bank_acctNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="@integer/int_1"
+                        android:text="@string/default_acct_no_12345678901"
+                        android:textColor="@color/payumoney_black"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/withdraw_change_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_change"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/dimen_15sp"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+                android:id="@+id/withdraw_money_with_existing_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/label_withdraw_money"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/dimen_16sp"
+                pptextview:bgColor="?attr/colorPrimary"
+                pptextview:borderOnly="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_new_withdrawBank_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/saved_withdraw_bank"
+            android:layout_alignTop="@+id/saved_withdraw_bank"
+            android:background="@color/card_bg_color"
+            android:padding="@dimen/dimen_15dp"
+            android:visibility="invisible">
+
+            <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+                android:id="@+id/add_new_withdrawBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15dp"
+                android:text="@string/label_withdraw_money"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/dimen_16sp"
+                pptextview:bgColor="?attr/colorPrimary"
+                pptextview:borderOnly="true" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/saved_withdraw_bank_progress"
+            layout="@layout/app_progressbar" />
+    </RelativeLayout>
+
+</LinearLayout>

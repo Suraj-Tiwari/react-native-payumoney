@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auto_load_update_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_proceed_add_money"
+        android:background="@color/payumoney_app_background_color"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10dp">
+
+            <include layout="@layout/wallet_view_saved_card_layout" />
+
+            <include layout="@layout/wallet_view_net_banking_layout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/btn_proceed_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/add_amount"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_17sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false" />
+
+</RelativeLayout>
+

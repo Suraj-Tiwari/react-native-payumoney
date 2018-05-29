@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_grey">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/dimen_15dp"
+        tools:context="com.citruspay.sdkui.ui.fragments.WithDrawMoneyFragment">
+
+        <RelativeLayout
+            android:id="@+id/layout_withdraw_balance_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.payumoney.sdkui.ui.widgets.CustomEditText
+                android:id="@+id/edt_withdraw_amount"
+                style="@style/WithDrawMoneyEditFields"
+                android:digits="0123456789"
+                android:hint="@string/hint_enter_withdraw_amount"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/label_citrus_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edt_withdraw_amount"
+                android:layout_alignStart="@+id/edt_withdraw_amount"
+                android:layout_below="@+id/edt_withdraw_amount"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/label_withdraw_balance"
+                android:textColor="@color/payumoney_color_withdraw_label"
+                android:textSize="@dimen/dimen_15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_withdraw_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_withdraw_balance_amount"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/label_enter_bank_details"
+                android:textColor="@color/payumoney_color_withdraw_label_dark"
+                android:textSize="@dimen/dimen_17sp" />
+
+            <com.payumoney.sdkui.ui.widgets.CustomEditText
+                android:id="@+id/edt_withdraw_acct_holder_name"
+                style="@style/WithDrawMoneyEditFields"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:hint="@string/hint_account_holder_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <com.payumoney.sdkui.ui.widgets.CustomEditText
+                android:id="@+id/edt_withdraw_acct_number"
+                style="@style/WithDrawMoneyEditFields"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:hint="@string/hint_account_number"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <com.payumoney.sdkui.ui.widgets.CustomEditText
+                android:id="@+id/edt_withdraw_ifsc_code"
+                style="@style/WithDrawMoneyEditFields"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:hint="@string/hint_ifsc_code"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:id="@+id/checkbox_save_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_save_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/WithDrawCheckbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_save_withdraw_option"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/payumoney_color_withdraw_label_dark"
+                    android:textSize="@dimen/dimen_15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+            android:id="@+id/btn_proceed_withdraw_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_withdraw_details"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dimen_12dp"
+            android:text="@string/btn_proceed"
+            android:textColor="@color/payumoney_white"
+            android:textSize="@dimen/dimen_20sp"
+            pptextview:bgColor="?attr/colorPrimary"
+            pptextview:borderOnly="false" />
+    </RelativeLayout>
+</ScrollView>

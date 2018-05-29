@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_app_background_color"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:padding="@dimen/dimen_8dp"
+    tools:context="com.citrus.sdk.ui.com.citruspay.sdk.ui.fragments.ResultFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:cardBackgroundColor="@color/payumoney_white"
+            app:cardCornerRadius="@dimen/dimen_7dp"
+            app:cardElevation="@dimen/dimen_5dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="@dimen/dimen_16dp"
+            card_view:cardElevation="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/payment_result_image"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_txn_done" />
+
+                <TextView
+                    android:id="@+id/payment_result_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:text="@string/text_payment_success"
+                    android:textColor="@color/payumoney_text_color"
+                    android:textSize="@dimen/dimen_24sp" />
+
+
+                <TextView
+                    android:id="@+id/transaction_response_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:gravity="center"
+                    android:textColor="@color/payumoney_black"
+                    android:textSize="@dimen/dimen_16sp" />
+
+
+                <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+                    android:id="@+id/btn_continue_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:text="@string/btn_continue_shopping"
+                    android:textColor="@color/payumoney_white"
+                    android:textSize="@dimen/dimen_17sp"
+                    pptextview:bgColor="?attr/colorPrimary"
+                    pptextview:borderOnly="false" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+

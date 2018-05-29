@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_grey"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context="com.citruspay.sdkui.ui.fragments.AddMoneyFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/add_amount_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:background="@drawable/bg_rounded_white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/add_money_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_28dp"
+            android:layout_marginRight="@dimen/dimen_28dp"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:text="@string/text_add_money_wallet"
+            android:textAllCaps="true"
+            android:textColor="@color/payumoney_label_color"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <com.payumoney.sdkui.ui.widgets.CustomTextInputLayout
+            android:id="@+id/amount_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_money_label"
+            android:layout_marginLeft="@dimen/dimen_26dp"
+            android:layout_marginRight="@dimen/dimen_26dp"
+            android:layout_marginTop="@dimen/dimen_15dp">
+
+            <EditText
+                android:id="@+id/amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_amount"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="@color/payumoney_text_color"
+                android:textColorHint="@color/payumoney_label_color"
+                android:textSize="@dimen/dimen_17sp" />
+        </com.payumoney.sdkui.ui.widgets.CustomTextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_til"
+            android:layout_marginLeft="@dimen/dimen_28dp"
+            android:layout_marginRight="@dimen/dimen_28dp"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:background="@drawable/bg_rounded_solid_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_add_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_button_normal_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plus_500"
+                android:textColor="@color/payumoney_text_color" />
+
+            <TextView
+                android:id="@+id/button_add_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_1dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_button_normal"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plus_1000"
+                android:textColor="@color/payumoney_text_color" />
+
+            <TextView
+                android:id="@+id/button_add_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_1dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_button_normal_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plus_2000"
+                android:textColor="@color/payumoney_text_color" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/button_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_amount_container"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/btn_add_money"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_17sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false" />
+
+</RelativeLayout>
+
+

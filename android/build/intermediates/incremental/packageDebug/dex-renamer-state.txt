@@ -1,0 +1,4 @@
+#Fri May 25 17:45:09 IST 2018
+base.0=/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context="com.payu.custombrowser.ReviewOrderFragment">
+    
+    <View
+        style="@style/cb_horizontal_line"
+        android:layout_alignParentTop="true"
+        android:id="@+id/v_payu_review_shadow"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/r_payu_constant_height"
+        android:layout_below="@id/v_payu_review_shadow"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:id="@+id/r_payu_review_order"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-regular"
+                android:padding="10dp"
+                android:id="@+id/t_payu_review_order_information"
+                android:text="@string/order_information"
+                android:textColor="@color/cb_dark_grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ScrollView
+                android:id="@+id/s_payu_review_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/t_payu_review_order_information"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/payu_review_order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"></LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/i_payu_close_review"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="2dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/cb_payu_close_grey" />
+    </RelativeLayout>
+</RelativeLayout>

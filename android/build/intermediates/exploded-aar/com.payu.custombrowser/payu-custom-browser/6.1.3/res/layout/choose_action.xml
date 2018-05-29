@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cb_relative_layout"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        style="@style/cb_horizontal_line"
+        android:background="@color/cb_border" />
+
+    <LinearLayout
+        style="@style/cb_linear_layout"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_twelve"
+                android:layout_marginTop="@dimen/cb_eight"
+                android:drawableTop="@drawable/slider"
+                android:gravity="center"
+                android:textSize="@dimen/cb_sixteenScaled" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/error_message"
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cb_four"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/cb_incorrect_otp_e"
+                android:textColor="@color/cb_errorRed"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/choose_text"
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_twelve"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/cb_authenticate_with"
+                android:textColor="@color/cb_dark_grey"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                style="@style/cb_linear_layout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/cb_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cb_sixteen"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/cb_background"></View>
+
+                    <RelativeLayout
+                        style="@style/cb_relative_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/pin"
+                            style="@style/cb_text_view"
+                            android:layout_centerInParent="true"
+                            android:drawableTop="@drawable/pin_button_selector"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="@string/cb_password"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/cb_background"></View>
+
+                    <RelativeLayout
+
+                        style="@style/cb_relative_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/otp"
+                            style="@style/cb_text_view"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="right"
+                            android:drawableTop="@drawable/otp_button_selector"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="@string/cb_sms_otp"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/cb_background"></View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/rectangle_box"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:drawableRight="@drawable/trusticon"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/cb_textColor"
+                            android:textSize="@dimen/cb_twelveScaled"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/cb_four"
+                            android:background="@null"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center_vertical"
+                            android:text="@string/cb_powered_by"
+                            android:textColor="@color/cb_textColor"
+                            android:textSize="15sp"
+                            android:textStyle="normal"
+
+                            />
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/cb_four"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/logo_payu"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:textSize="@dimen/cb_twelveScaled"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/cb_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@null">
+
+                        <ImageView
+                            android:id="@+id/bank_logo"
+                            style="@style/cb_image_view"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@null"
+                            android:contentDescription="@string/cb_bank_logo"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

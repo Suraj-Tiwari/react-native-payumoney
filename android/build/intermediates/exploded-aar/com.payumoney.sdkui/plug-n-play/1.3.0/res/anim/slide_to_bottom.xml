@@ -1,0 +1,9 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:interpolator="@android:interpolator/anticipate"
+    tools:ignore="NewApi">
+    <translate
+        android:duration="@android:integer/config_longAnimTime"
+        android:fromYDelta="0%p"
+        android:toYDelta="100%p" />
+</set>

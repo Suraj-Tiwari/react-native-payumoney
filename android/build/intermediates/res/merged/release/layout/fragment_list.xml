@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/btn_add_new_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_weight="0"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/btn_add_new_card"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_16sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/manage_card_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_weight="1"
+        android:background="@color/payumoney_white"
+        android:divider="@null"
+        android:dividerHeight="10dp" />
+</LinearLayout>

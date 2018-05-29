@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/layout-v11/saved_card_item.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/layout-v11/saved_card_item.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/layout-v11/magicretry_fragment.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.magicretry/magicretry/1.0.5/res/layout-v11/magicretry_fragment.xml"
+    }
+]

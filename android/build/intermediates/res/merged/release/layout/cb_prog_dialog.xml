@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_progress"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/cb_image_view"
+            android:background="@android:color/white"
+            android:contentDescription="@string/cb_payu_icon"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/l_icon1" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/cb_text_view"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:paddingTop="30dp"
+            android:text="@string/cb_process_request"
+            android:textSize="20sp"
+            android:textStyle="normal"></TextView>
+
+        <TextView
+            android:id="@+id/dialog_desc"
+            style="@style/cb_text_view"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingTop="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/cb_please_wait"
+            android:textSize="15sp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+</RelativeLayout>

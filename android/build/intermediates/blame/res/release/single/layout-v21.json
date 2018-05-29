@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/layout-v21/activity_citrus_ui.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/layout-v21/activity_citrus_ui.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/layout-v21/saved_card_item.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.3.0/res/layout-v21/saved_card_item.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/layout-v21/bank_row_details.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/layout-v21/bank_row_details.xml"
+    }
+]

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="actionbar_background">@color/primary_blue</color>
+    <color name="activate_text_color">#FF666666</color>
+    <color name="active_text">#3c3329</color>
+    <color name="active_yellow">#ffdd00</color>
+    <color name="app_primary_text_disabled_material_light">#39000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="blue">#FF1784C7</color>
+    <color name="button_background">@color/active_yellow</color>
+    <color name="button_disabled_background">@color/inactive_bg</color>
+    <color name="button_gray">#cbcbcb</color>
+    <color name="button_green">#5fc73b</color>
+    <color name="card_bg_color">#EDEDED</color>
+    <color name="cards_label_textColor">#13100d</color>
+    <color name="cards_number_textColor">#514538</color>
+    <color name="cb_dark_blue_button">#094774</color>
+    <color name="cb_otpColor">#368ecd</color>
+    <color name="cb_otpDisabledColor">#7d88b3</color>
+    <color name="circle_indicator">@color/primary_blue</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="color_13">#fffbe2</color>
+    <color name="color_2">#c56100</color>
+    <color name="color_20">#f2f2f2</color>
+    <color name="color_3">#13100d</color>
+    <color name="color_5">#7bd6d6c6</color>
+    <color name="color_9">#514538</color>
+    <color name="dark_gray">#d5d5d5</color>
+    <color name="darker_gray">#8c8c8c</color>
+    <color name="deactivate_text_color">#FFCCCCCC</color>
+    <color name="deep_blue">#1c3f95</color>
+    <color name="error_strip">#e74040</color>
+    <color name="gray">#95a5a6</color>
+    <color name="help_text">@color/primary_blue</color>
+    <color name="highlighted_icon">@color/primary_blue</color>
+    <color name="inactive_bg">#fffbe2</color>
+    <color name="inactive_text">#d0cbc6</color>
+    <color name="input_glow">@color/primary_blue</color>
+    <color name="input_glow_hidden">@color/dark_gray</color>
+    <color name="input_gray">#FFDEE6E6</color>
+    <color name="light_blue">#aecdd8</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="orange">#c56100</color>
+    <color name="payumoney_accent">#7AA4D5</color>
+    <color name="payumoney_text_color">#575757</color>
+    <color name="primary_blue">#00aeef</color>
+    <color name="primary_green">#6ac451</color>
+    <color name="primary_orange">#c56100</color>
+    <color name="sky_blue">#7ec0ee</color>
+    <color name="slogan_text">@color/deep_blue</color>
+    <color name="success">#3bbe01</color>
+    <color name="title_indicator">@color/primary_blue</color>
+    <color name="trans_black">#32000000</color>
+    <color name="transparent">#00000000</color>
+    <item name="white" type="color">#FFFFFFFF</item>
+    <dimen name="pp_edit_text_inset_bottom_material">7dp</dimen>
+    <dimen name="pp_edit_text_inset_horizontal_material">4dp</dimen>
+    <dimen name="pp_edit_text_inset_top_material">10dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <string name="app_name">mypayumoneysdk</string>
+    <string name="disconnected_from_internet">Kindly check your internet connectivity.</string>
+    <string name="email">Email</string>
+    <string name="email_phone_no">Email / Mobile Phone No.</string>
+    <string name="enter_email_id">Your email is required</string>
+    <string name="forgot_password"><a href="#">Forgot Password?</a></string>
+    <string name="invalid_email_id">This email appears to be invalid</string>
+    <string name="invalid_email_or_password">This does not seem to be a valid username and/or password.</string>
+    <string name="invalid_otp">Incorrect verification code.</string>
+    <string name="logging_in">Logging In…</string>
+    <string name="login">LOGIN</string>
+    <string name="otp_password">Password / OTP</string>
+    <string name="password">Password</string>
+    <string name="payumoney_color_string">#%06X</string>
+    <string name="slogan">The best way to pay online</string>
+    <style name="AlertDialogStyle_Default" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primary_green</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/payumoney_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+    <style name="AppTheme.Transparent" parent="@android:style/Theme.Holo.Light.Dialog" ns1:ignore="NewApi">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:excludeFromRecents">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorButtonNormal">@color/primary_green</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="EditTextLineColor">
+        <item name="colorControlActivated">@color/payumoney_text_color</item>
+        <item name="colorControlNormal">@color/app_primary_text_disabled_material_light</item>
+    </style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar" ns1:ignore="NewApi">
+        <item name="android:background">#6ac451</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light" ns1:ignore="NewApi">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="MyTheme.AppCompat" parent="@style/Theme.AppCompat.Light.NoActionBar" ns1:ignore="NewApi">
+
+    </style>
+    <style name="PauseDialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <style name="PauseDialogAnimation">
+
+
+    </style>
+    <style name="PayU.AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green</item>
+        <item name="colorAccent">@color/primary_green</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorButtonNormal">@color/primary_green</item>
+        <!-- android:textColorPrimary is the  color of the title text
+       in the Toolbar, in the Theme.AppCompat theme:  -->
+       <!-- <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--This is to enable disable Text capitalisation all over APP-->
+        <!-- <item name="textAllCaps">false</item>-->
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <item name="android:textColorPrimaryInverse">@android:color/white</item>
+    </style>
+    <style name="PayUAppTheme" parent="PayU.AppTheme.Base">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="PayUAppThemedefault" parent="PayUAppTheme">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green</item>
+        <item name="colorAccent">@color/primary_green</item>
+        <item name="colorButtonNormal">@color/primary_green</item>
+       <!-- <item name="alertDialogTheme">@style/AlertDialogStyle_Default</item>-->
+    </style>
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="login" parent="@android:style/Theme.Holo.Light.Dialog" ns1:ignore="NewApi">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:excludeFromRecents">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorButtonNormal">@color/primary_green</item>
+    </style>
+</resources>

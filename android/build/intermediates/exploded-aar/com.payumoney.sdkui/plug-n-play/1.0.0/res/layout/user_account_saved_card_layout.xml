@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_4dp"
+    android:layout_weight="0"
+    android:background="@color/payumoney_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/savedCard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/label_saved_cards"
+            android:textColor="@color/payumoney_black"
+            android:textSize="@dimen/dimen_17sp" />
+
+        <TextView
+            android:id="@+id/tvBtn_manage_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/label_manage_cards"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="@dimen/dimen_15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/savedCard_title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/saved_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@color/payumoney_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.payumoney.sdkui.ui.adapters.PagerContainer
+                android:id="@+id/container_pager_saved_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:background="@color/payumoney_white">
+
+                <com.payumoney.sdkui.ui.widgets.WrapContentHeightViewPager
+                    android:id="@+id/viewpager_saved_card"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/payumoney_white"
+                    android:cacheColorHint="#00000000" />
+            </com.payumoney.sdkui.ui.adapters.PagerContainer>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp">
+
+            <com.payumoney.sdkui.ui.widgets.CirclePageIndicator
+                android:id="@+id/indicator_pager_saved_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fillColor="?attr/colorPrimary"
+                app:pageColor="@color/light_gray"
+                app:strokeColor="@color/payumoney_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/savedCard_title"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <include layout="@layout/add_new_card_item" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/saved_cards_progress"
+        layout="@layout/app_progressbar" />
+
+</RelativeLayout>

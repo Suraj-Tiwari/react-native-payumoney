@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auto_load_update_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/payu_error_text"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/auto_load_update_bg_color"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/amount_layout"
+                layout="@layout/amount_layout"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/wallet_view_login_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/wallet_layout"
+                layout="@layout/wallet_view_user_wallet_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/saved_card_layout"
+                layout="@layout/wallet_view_saved_card_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/net_banking_layout"
+                layout="@layout/wallet_view_net_banking_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/third_party_wallets_layout"
+                layout="@layout/wallet_view_third_party_wallets_layout"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/payu_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pay_quick_pay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:text="@string/payu_bank_down_msg"
+        android:textSize="@dimen/dimen_14sp"
+        android:visibility="gone"></TextView>
+
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/btn_pay_quick_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_footer"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/quick_pay_amount"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_17sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_footer"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/secure_payments_by_payu"
+            android:textColor="@color/text_color_powered_by_payu"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

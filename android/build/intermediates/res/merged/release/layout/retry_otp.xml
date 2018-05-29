@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cb_linear_layout"
+    android:orientation="vertical">
+
+    <View
+        style="@style/cb_horizontal_line"
+        android:background="@color/cb_border" />
+
+    <LinearLayout
+        style="@style/cb_linear_layout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_eighteen"
+                android:layout_marginTop="@dimen/cb_eight"
+                android:drawableTop="@drawable/slider"
+                android:gravity="center"
+                android:textColor="@color/cb_textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/error_message"
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_four"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/cb_incorrect_otp_e"
+                android:textColor="@color/cb_errorRed"
+                android:textSize="18sp"
+
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/regenerate_text"
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_thirtysix"
+                android:gravity="center"
+                android:text="@string/cb_retry"
+                android:textColor="@color/cb_textColor"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/otp_sms"
+                style="@style/cb_edit_text"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/cb_eight"
+                android:layout_marginTop="@dimen/cb_twentyfour"
+                android:ems="5"
+
+                android:hint="@string/cb_enter_otp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/cb_otpColor"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/approve"
+                style="@style/cb_approve_otp"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/cb_twentyfour"
+                android:layout_marginTop="@dimen/cb_eight"
+                android:alpha=".3"
+                android:background="@drawable/approve_otp_button"
+                android:clickable="false"
+                android:text="@string/cb_approve_otp"
+
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/cb_linear_layout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/regenerate_layout"
+                    style="@style/cb_linear_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/cb_thirtysix"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/pin_layout_gone"
+                        style="@style/cb_linear_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/pin"
+                            style="@style/cb_approve_otp"
+                            android:layout_width="150dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/approve_otp_button"
+                            android:paddingLeft="@dimen/cb_eight"
+                            android:paddingRight="@dimen/cb_eight"
+                            android:text="@string/cb_password_value"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Enter_manually_gone"
+                        style="@style/cb_linear_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/enter_manually"
+                            style="@style/cb_approve_otp"
+                            android:layout_width="150dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/approve_otp_button"
+                            android:paddingLeft="@dimen/cb_eight"
+                            android:paddingRight="@dimen/cb_eight"
+                            android:text="@string/cb_enter_manually"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Regenerate_layout_gone"
+                        style="@style/cb_linear_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/retry"
+                            style="@style/cb_approve_otp"
+                            android:layout_width="150dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/approve_otp_button"
+                            android:paddingLeft="@dimen/cb_eight"
+                            android:paddingRight="@dimen/cb_eight"
+                            android:text="@string/cb_regenerate_otp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/cb_relative_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/rectangle_box"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/cb_linear_layout"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@null"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:drawableRight="@drawable/trusticon"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/cb_textColor"
+                            android:textSize="@dimen/cb_twelveScaled"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/cb_four"
+                            android:background="@null"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:gravity="center_vertical"
+                            android:text="@string/cb_powered_by"
+                            android:textColor="@color/cb_textColor"
+                            android:textSize="15sp"
+                            android:textStyle="normal"
+
+                            />
+
+                        <TextView
+                            style="@style/cb_text_view"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="@dimen/cb_four"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/logo_payu"
+                            android:drawablePadding="@dimen/cb_four"
+                            android:gravity="center"
+                            android:textColor="@color/cb_textColor"
+                            android:textSize="@dimen/cb_twelveScaled"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/cb_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@null">
+
+                        <ImageView
+                            android:id="@+id/bank_logo"
+                            style="@style/cb_image_view"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@null"
+                            android:contentDescription="@string/cb_bank_logo"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

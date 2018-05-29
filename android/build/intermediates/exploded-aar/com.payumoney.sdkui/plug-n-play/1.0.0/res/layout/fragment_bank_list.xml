@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/payumoney_white"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/label_select_bank"
+            android:textColor="@color/payumoney_black"
+            android:textSize="@dimen/dimen_22sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/img_dismiss_dialog"
+            android:layout_width="@dimen/dimen_25dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/divider_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/auto_load_update_bg_color"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/bank_filter_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_search_view"
+            android:clickable="true"
+            android:hint="@string/label_enter_bank_name"
+            android:textSize="@dimen/dimen_18sp"
+            app:iconifiedByDefault="false" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/light_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_get_bank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/enabled_bank_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/payumoney_white" />
+
+            <com.payumoney.sdkui.ui.widgets.StickyHeaderIndex
+                android:id="@+id/sticky_index_container"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold"
+                app:rowHeight="64dp"
+                app:stickyViewTextColor="?attr/colorPrimary"
+                app:stickyWidth="60dp" />
+
+        </RelativeLayout>
+
+        <!--   <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar
+                   android:id="@+id/progress_get_bank_list"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:color="?attr/colorPrimary"
+                   android:radius="10dp"
+                   android:visibility="visible"
+                   />
+
+           </LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>

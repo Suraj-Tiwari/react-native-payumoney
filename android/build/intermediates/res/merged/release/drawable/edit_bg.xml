@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray" />
+        </shape>
+    </item>
+    <item
+        android:bottom="1.5dp"
+        android:insetBottom="@dimen/pp_edit_text_inset_bottom_material"
+        android:insetLeft="@dimen/pp_edit_text_inset_horizontal_material"
+        android:insetRight="@dimen/pp_edit_text_inset_horizontal_material"
+        android:insetTop="@dimen/pp_edit_text_inset_top_material">
+        <shape android:shape="rectangle">
+
+            <padding
+                android:bottom="@dimen/pp_edit_text_inset_bottom_material"
+                android:left="@dimen/pp_edit_text_inset_horizontal_material"
+                android:right="@dimen/pp_edit_text_inset_horizontal_material"
+                android:top="@dimen/pp_edit_text_inset_top_material" />
+
+            <solid android:color="@color/card_bg_color" />
+        </shape>
+    </item>
+</layer-list>

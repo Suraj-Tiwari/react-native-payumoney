@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "main": "index.android.js",
+  "name": "react-native-payumoney",
+  "author": "Suraj Tiwari",
+  'description': "Payumoney React-native Library for android",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suraj-Tiwari/react-native-payumoney.git"
+  },
+  "version": "0.0.1"
+}

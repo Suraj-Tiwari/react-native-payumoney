@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cb_linear_layout"
+    android:orientation="vertical">
+
+    <View
+        style="@style/cb_horizontal_line"
+        android:background="@color/cb_border" />
+
+    <LinearLayout
+        style="@style/cb_linear_layout"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/cb_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/cb_eighteen"
+                android:layout_marginTop="@dimen/cb_eight"
+                android:drawableTop="@drawable/slider"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/cb_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/cb_sixteen"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/cb_card_not_registered_with_pin"
+            android:textColor="@color/cb_dark_grey"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            style="@style/cb_linear_layout"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cb_thirtysix"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/cb_eight"
+            android:paddingRight="@dimen/cb_eight">
+
+            <Button
+                android:id="@+id/pin"
+                style="@style/cb_approve_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cb_eight"
+                android:layout_weight="1"
+                android:background="@drawable/approve_otp_button"
+                android:text="@string/cb_register_for_pin"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/otp"
+                style="@style/cb_approve_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cb_eight"
+                android:layout_weight="1"
+                android:background="@drawable/approve_otp_button"
+                android:text="@string/cb_use_sms_otp"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/cb_relative_layout"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rectangle_box"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/cb_linear_layout"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/cb_text_view"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/cb_four"
+                    android:drawableRight="@drawable/trusticon"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/cb_textColor"
+                    android:textSize="@dimen/cb_twelveScaled"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/cb_text_view"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/cb_four"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/cb_four"
+                    android:gravity="center_vertical"
+                    android:text="@string/cb_powered_by"
+                    android:textColor="@color/cb_textColor"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/cb_text_view"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/cb_four"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/logo_payu"
+                    android:drawablePadding="@dimen/cb_four"
+                    android:gravity="center"
+                    android:textColor="@color/cb_textColor"
+                    android:textSize="@dimen/cb_twelveScaled"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/cb_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/bank_logo"
+                    style="@style/cb_image_view"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/cb_bank_logo"
+                    android:paddingRight="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

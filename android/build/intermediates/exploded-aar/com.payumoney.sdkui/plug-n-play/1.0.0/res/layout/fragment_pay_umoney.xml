@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auto_load_update_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/payu_error_text"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/auto_load_update_bg_color"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10dp">
+
+            <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp"
+                android:text="Login"
+                android:textColor="@color/payumoney_white"
+                android:textSize="@dimen/dimen_17sp"
+                android:visibility="gone"
+                pptextview:bgColor="?attr/colorPrimary"
+                pptextview:borderOnly="false" />
+            <include
+                android:id="@+id/amount_layout"
+                layout="@layout/amount_layout"
+                android:visibility="visible"/>
+            <include
+                android:id="@+id/wallet_layout"
+                layout="@layout/wallet_view_user_wallet_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/saved_card_layout"
+                layout="@layout/wallet_view_saved_card_layout"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/net_banking_layout"
+                layout="@layout/wallet_view_net_banking_layout"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView android:id="@+id/payu_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pay_quick_pay"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textSize="@dimen/dimen_14sp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:text="@string/payu_bank_down_msg"
+        >
+        </TextView>
+    <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+        android:id="@+id/btn_pay_quick_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:text="@string/quick_pay_amount"
+        android:textColor="@color/payumoney_white"
+        android:textSize="@dimen/dimen_17sp"
+        pptextview:bgColor="?attr/colorPrimary"
+        pptextview:borderOnly="false" />
+
+</RelativeLayout>

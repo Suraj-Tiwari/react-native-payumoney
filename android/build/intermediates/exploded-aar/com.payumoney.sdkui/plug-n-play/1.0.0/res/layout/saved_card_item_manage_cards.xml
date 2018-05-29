@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    app:cardBackgroundColor="@color/card_bg_color"
+    app:cardCornerRadius="@dimen/dimen_7dp"
+    app:cardElevation="@dimen/dimen_5dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    card_view:cardElevation="@dimen/dimen_5dp">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dimen_15dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_card_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_2dp"
+                android:visibility="invisible">
+
+                <com.payumoney.sdkui.ui.widgets.FlipImageView
+                    android:id="@+id/bank_logo"
+                    android:layout_width="@dimen/dimen_25dp"
+                    android:layout_height="@dimen/dimen_25dp" />
+
+                <TextView
+                    android:id="@+id/card_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:text="@string/label_bank_name"
+                    android:textSize="@dimen/dimen_18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/temp_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout_card_bankName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/layout_card_bankName"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_2dp"
+                android:textSize="@dimen/dimen_18sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_delete_Card"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:src="@drawable/ic_action_delete"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/card_cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rel_layout_bank_name"
+            android:layout_alignStart="@+id/rel_layout_bank_name"
+            android:layout_below="@+id/rel_layout_bank_name"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/default_card_number"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <TextView
+            android:id="@+id/card_cardExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rel_layout_bank_name"
+            android:layout_alignStart="@+id/rel_layout_bank_name"
+            android:layout_below="@+id/card_cardNumber"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/default_card_expiry"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <ImageView
+            android:id="@+id/card_cardType_image"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_alignBottom="@+id/autoLoadSwitch_card_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/card_cardExpiry"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp" />
+
+        <LinearLayout
+            android:id="@+id/autoLoadSwitch_card_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_cardExpiry"
+            android:layout_marginTop="@dimen/dimen_10dp">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/autoLoadSwitch_cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:text="@string/label_autoload" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cb_relative_layout">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/magic_retry_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:orientation="vertical" />
+
+    <ProgressBar
+        android:id="@+id/cb_progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/cb_progress_bar"></ProgressBar>
+
+    <LinearLayout
+        android:id="@+id/trans_overlay"
+        style="@style/cb_linear_layout"
+        android:background="@drawable/background_drawable"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/cb_blank_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/parent"
+        style="@style/cb_linear_layout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/arrow"
+            style="@style/cb_image_view"
+            android:layout_gravity="center"
+            android:contentDescription="@string/cb_top_arrow" />
+
+        <FrameLayout
+            android:id="@+id/help_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/view"
+            style="@style/cb_relative_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                style="@style/cb_horizontal_line"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                style="@style/cb_linear_layout"
+                android:layout_height="30dp">
+
+                <TextView
+                    style="@style/cb_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/cb_eight"
+                    android:layout_marginTop="@dimen/cb_eight"
+                    android:drawableTop="@drawable/slider"
+                    android:gravity="center"
+                    android:textColor="@color/cb_textColor"
+                    android:textSize="@dimen/cb_sixteenScaled" />
+            </LinearLayout>
+
+            <!-- <ImageView
+                 android:layout_gravity="right|center_vertical"
+                 android:padding="5dp"
+                 android:layout_height="30dp"
+                 android:layout_width="30dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerHorizontal="true"
+                 android:src="@drawable/arrow_cb">
+             </ImageView>-->
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

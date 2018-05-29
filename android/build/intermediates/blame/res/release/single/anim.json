@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/cb_animation.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.1.3/res/anim/cb_animation.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_push_up_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/cb_translate.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.1.3/res/anim/cb_translate.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/cb_tranlateup.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.1.3/res/anim/cb_tranlateup.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/slide_up_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.2.1/res/anim/slide_up_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_fab_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/cb_face_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.1.3/res/anim/cb_face_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/slide_up_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.2.1/res/anim/slide_up_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/fadeout.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/anim/fadeout.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/fadein.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/anim/fadein.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_snackbar_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/slide_to_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/anim/slide_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_fade_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_fade_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_push_up_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_fab_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_slide_down.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_slide_down.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_fade_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/cb_fade_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payu.custombrowser/payu-custom-browser/6.1.3/res/anim/cb_fade_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/design_snackbar_out.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/catalyst_slide_up.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_slide_up.xml"
+    },
+    {
+        "merged": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/res/merged/release/anim/slide_from_bottom.xml",
+        "source": "/Users/surajtiwari/Projects/RectNative/Payumoney/node_modules/ReactNativePayuMoneyModule/android/build/intermediates/exploded-aar/com.payumoney.sdkui/plug-n-play/1.0.0/res/anim/slide_from_bottom.xml"
+    }
+]

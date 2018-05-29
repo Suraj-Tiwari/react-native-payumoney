@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pptextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/single_btn_dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="@string/label_auto_load_set_done"
+        android:textColor="@color/payumoney_black"
+        android:textSize="@dimen/dimen_20sp" />
+
+    <TextView
+        android:id="@+id/single_btn_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="@string/label_auto_load_success_desc"
+        android:textColor="@color/payumoney_black"
+        android:textSize="@dimen/dimen_16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:gravity="center">
+
+        <com.payumoney.sdkui.ui.widgets.CustomDrawableTextView
+            android:id="@+id/single_btn_dialog_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_35dp"
+            android:paddingRight="@dimen/dimen_35dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="@string/btn_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_18sp"
+            pptextview:bgColor="?attr/colorPrimary"
+            pptextview:borderOnly="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

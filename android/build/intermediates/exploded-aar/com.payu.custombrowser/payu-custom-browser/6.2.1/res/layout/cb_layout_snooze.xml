@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/text_view_snooze_header"
+        layout="@layout/dialog_ui_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/text_view_snooze_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="Roboto-Regular"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/cb_slownetwork_status"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_view_transaction_snoozed_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Please do not kill the app"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_retry_anyway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:text="@string/cb_snooze_retry_anyway"
+            android:textColor="#00adf2"
+            android:visibility="gone"/>
+
+        <com.payu.custombrowser.widgets.SnoozeLoaderView
+            android:id="@+id/snooze_loader_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:visibility="gone"
+            app:activeBarColor="#00adf2"
+            app:animationSpeed="200"
+            app:barHeight="60px"
+            app:barSpace="20px"
+            app:barWidth="20px"
+            app:inActiveBarColor="#b0eafc" />
+
+        <Button
+            android:id="@+id/button_snooze_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00adf2"
+            android:text="@string/cb_snooze_try_later"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_view_retry_message_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="sans-serif-regular"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/cb_retry_restart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_view_ac_debited_twice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="Roboto-Regular"
+            android:lineSpacingExtra="24sp"
+            android:text="@string/cb_ac_debited_twice"
+            android:textColor="#9b9b9b"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_retry_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:text="RETRY NOW"
+            android:textColor="#00adf2" />
+
+        <TextView
+            android:id="@+id/button_cancel_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="10sp"
+            android:padding="10dp"
+            android:text="Cancel Transaction"
+            android:textColor="#00adf2"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/t_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:background="#00adf2"
+            android:elevation="2dp"
+            android:text="Yes, I received a message"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/t_nconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:text="No, I did not"
+            android:textAlignment="center"
+            android:textColor="#00adf2"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/button_go_back_snooze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00adf2"
+            android:text="Go Back"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

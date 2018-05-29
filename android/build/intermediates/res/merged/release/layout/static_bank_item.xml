@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/static_bank_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/wallet_netbank_sbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_5dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:paddingStart="@dimen/dimen_5dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:text="@string/bank_sbi"
+        android:textColor="@color/payumoney_black"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:id="@+id/view_more_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/label_view_more_banks"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="@dimen/dimen_16sp" />
+
+</RelativeLayout>
+
