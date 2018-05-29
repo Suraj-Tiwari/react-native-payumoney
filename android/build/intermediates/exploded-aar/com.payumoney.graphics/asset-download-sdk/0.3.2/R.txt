@@ -1,3 +1,0 @@
-int drawable default_bank 0x7f020000
-int drawable default_card 0x7f020001
-int string app_name 0x7f030000
