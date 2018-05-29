@@ -6,7 +6,7 @@
   "description": "Payumoney React-native Library for android",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Suraj-Tiwari/react-native-payumoney.git"
+    "url": "https://github.com/Suraj-Tiwari/react-native-payumoney.git"
   },
   "keywords": [
     "react-native",
