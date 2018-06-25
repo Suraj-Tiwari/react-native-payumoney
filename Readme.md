@@ -18,7 +18,7 @@ $ npm i react-native-payumoney --save
 ### Automatic installation
 
 ```bash
-$ react-native link react-native-razorpay
+$ react-native link react-native-payumoney
 ```
 
 ### Steps
