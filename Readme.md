@@ -1,4 +1,4 @@
-# react-native-payumoney <img src='https://img.shields.io/badge/license-MIT-blue.svg' />  <img alt="npm dowloads" src="https://img.shields.io/npm/dm/react-native-payumoney.svg"/></a> <a href="https://www.npmjs.com/package/react-native-payumoney"><img alt="npm version" src="https://badge.fury.io/js/react-native-payumoney.svg"/></a> [![Build Status](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney.svg?branch=master)](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney)
+# react-native-payumoney <img src='https://img.shields.io/badge/license-MIT-blue.svg' />  <img alt="npm dowloads" src="https://img.shields.io/npm/dm/react-native-payumoney.svg"/></a> <a href="https://www.npmjs.com/package/react-native-payumoney"><img alt="npm version" src="https://badge.fury.io/js/react-native-payumoney.svg"/></a> [![Build Status](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney.svg?branch=master)](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney) [![Greenkeeper badge](https://badges.greenkeeper.io/Suraj-Tiwari/react-native-payumoney.svg)](https://greenkeeper.io/)
 ___
 ### Installation
 
