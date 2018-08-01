@@ -1,4 +1,7 @@
 # react-native-payumoney
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Suraj-Tiwari/react-native-payumoney.svg)](https://greenkeeper.io/)
+
 ___
 
 [version-badge]: https://img.shields.io/npm/v/react-native-payumoney.svg?style=flat-square
