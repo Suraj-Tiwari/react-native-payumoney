@@ -1,13 +1,7 @@
 # react-native-payumoney
 ___
 
-
-```sh
-$ npm install https://github.com/Suraj-Tiwari/react-native-payumoney --save
-```
-## Installation
-
-### Add to project
+### Installation
 
 Run the following on terminal from your project directory:
 
