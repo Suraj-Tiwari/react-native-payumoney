@@ -1,6 +1,9 @@
 # react-native-payumoney
 ___
 
+[version-badge]: https://img.shields.io/npm/v/react-native-payumoney.svg?style=flat-square
+[package]: https://www.npmjs.com/package/react-native-payumoney
+___
 ### Installation
 
 Run the following on terminal from your project directory:
@@ -108,4 +111,17 @@ TypeError:Cannot read property 'makePayment' of undefined question
 Make sure you have linked library `react-native link react-native-payumoney`
 See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#issuecomment-409661804)
 
+## Running example
+
+### 1. Install dependencies
+
+```bash
+$ cd ./example && npm install
+```
+
+### 2. Run it on Android
+
+```bash
+$ cd ./example && npm run android
+```
 
