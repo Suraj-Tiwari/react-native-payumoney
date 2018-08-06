@@ -114,13 +114,13 @@ See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#i
 ### 1. Install dependencies
 
 ```bash
-$ cd ./example && react-native run-android
+$ cd ./example && npm install
 ```
 
 ### 2. Run it on Android
 
 ```bash
-$ cd ./example && npm run android
+$ cd ./example && react-native run-android
 ```
 [version-badge]: https://img.shields.io/npm/v/react-native-payumoney.svg?style=flat-square
 [package]: https://www.npmjs.com/package/react-native-payumoney
