@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.2",
+    "react": "16.6.0",
     "react-native": "0.56.0",
     "react-native-payumoney": "git+https://github.com/Suraj-Tiwari/react-native-payumoney.git"
   },
