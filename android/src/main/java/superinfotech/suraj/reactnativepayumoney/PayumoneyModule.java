@@ -32,11 +32,11 @@ public class PayumoneyModule extends ReactContextBaseJavaModule implements Activ
 
     @Override
     public String getName() {
-        return "PayumoneyAndroid";
+        return "payumoney";
     }
 
     @ReactMethod
-    public void makePayment(final Double amount,
+    public void makePayment(final String amount,
                             final String txnId,
                             final String productName,
                             final String firstName,
@@ -51,7 +51,7 @@ public class PayumoneyModule extends ReactContextBaseJavaModule implements Activ
         ReactApplicationContext context = getReactApplicationContext();
         Activity currentActivity = getCurrentActivity();
         Intent intent = new Intent(currentActivity, PayActivity.class);
-        intent.putExtra("amount", amount);
+        intent.putExtra("amount", Double.parseDouble(amount));
         intent.putExtra("txnId", txnId);
         intent.putExtra("productName", productName);
         intent.putExtra("firstName", firstName);

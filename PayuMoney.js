@@ -1,6 +1,7 @@
 'use strict';
-var {NativeModules, NativeEventEmitter} = require('react-native');
-const PayuPay = NativeModules.PayumoneyAndroid;
+import {NativeModules, NativeEventEmitter} from 'react-native';
+
+const PayuPay = NativeModules.payumoney;
 const PayuEvent = new NativeEventEmitter(PayuPay);
 
 const removeSubscriptions = () => {
@@ -8,7 +9,7 @@ const removeSubscriptions = () => {
     PayuEvent.removeAllListeners('PAYU_PAYMENT_FAILED');
 };
 
-class PayuMoney {
+export default class PayuMoney {
     static pay(options) {
         let data = {
             amount: options.amount,
@@ -23,9 +24,7 @@ class PayuMoney {
             furl: options.furl,
             sandbox: options.sandbox,
             hash: options.hash
-        }
-        // PayumoneyAndroid.makePayment(amount, txid, productId, name, email, phone, id, key, surl,furl, sandbox,a).then((d) => {
-
+        };
         return new Promise(function (resolve, reject) {
             PayuEvent.addListener('PAYU_PAYMENT_SUCCESS', (data) => {
                 resolve(data);
@@ -40,4 +39,4 @@ class PayuMoney {
     }
 }
 
-export default PayuMoney;
+

@@ -54,19 +54,6 @@ public class PayActivity extends AppCompatActivity {
                              final Boolean merchantSandbox,
                              final String hash) {
 
-        Log.d("FormData", amount.toString());
-        Log.d("FormData", txnId);
-        Log.d("FormData", productName);
-        Log.d("FormData", firstName);
-        Log.d("FormData", email);
-        Log.d("FormData", phone);
-        Log.d("FormData", merchantId);
-        Log.d("FormData", merchantKey);
-        Log.d("FormData", merchantSUrl);
-        Log.d("FormData", merchantFUrl);
-        Log.d("FormData", merchantSandbox.toString());
-        Log.d("FormData", hash);
-
         PayUmoneySdkInitializer.PaymentParam.Builder builder = new PayUmoneySdkInitializer.PaymentParam.Builder();
         builder.setAmount(amount)
                 .setTxnId(txnId)
