@@ -27,18 +27,18 @@ export default class App extends Component<Props> {
 
     _makePay() {
         let options = {
-            amount: 10.0,
-            txid: "123123123",
+            amount: "10.0",
+            txid: "123123123" ,
             productId: "test",
             name: "Name",
             email: "test@gmail.com",
             phone: "8826343434",
-            id: "393463",
-            key: "LLKwG0",
+            id: "4914106",
+            key: "mdyCKV",
             surl: "https://www.payumoney.com/mobileapp/payumoney/success.php",
             furl: "https://www.payumoney.com/mobileapp/payumoney/failure.php",
-            sandbox: true, //false in production
-            hash: "d829abecdaf9f2835787b3f56d1c7565721ca2501e6414438e61948dab435f102fc93213008cdfa3474691cadcc2dabdde64cd58c128dd2afcf3b389d617919c"
+            sandbox: true,
+            hash: "f1c2830db04e388433db0857ca00a9f918ee64b070e45a4c2525a9f4b7df602d6d82f2b187bca7a595c5c7f15ee29349c50f11c5a99d0c29a735423486852b7b"
         };
         PayuMoney.pay(options).then((d) => {
             console.log(d);
