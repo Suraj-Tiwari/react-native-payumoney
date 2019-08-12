@@ -110,9 +110,8 @@ Make sure you have linked library `react-native link react-native-payumoney`
 See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#issuecomment-409661804)
 
 
-```json
-{ "success": error }
-```
+
+> { success: error }
 
 This is very common error, when your server side hash is calculated in-correctly or
 when trying to use **Web Merchant KEY + SALT** on sandbox in Android  
