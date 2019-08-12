@@ -109,7 +109,7 @@ TypeError:Cannot read property 'makePayment' of undefined question
 Make sure you have linked library `react-native link react-native-payumoney`
 See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#issuecomment-409661804)
   
-  
+    
 > { success: error }
 
 This is very common error, when your server side hash is calculated in-correctly or
