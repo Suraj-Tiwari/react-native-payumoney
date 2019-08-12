@@ -116,8 +116,22 @@ See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#i
 
 This is very common error, when your server side hash is calculated in-correctly or
 when trying to use *Web Merchant KEY + SALT* on sandbox in Android  
-Please use Following KEY, SALT, MERCHANT ID for sandbox usage 
+Please use Following KEY, SALT, MERCHANT ID for sandbox usage
 
+```js
+  MID : 4934580
+  Key : rjQUPktU
+  Salt : e5iIg1jwi8
+```js
+
+Below is the test card details for doing a test transaction in the testing mode.
+
+```js
+  Card No - 5123456789012346
+  Expiry - 05/2020
+  CVV - 123
+  Name - Test
+```js
 
 ## Running example
 
