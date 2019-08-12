@@ -1,4 +1,4 @@
-# react-native-payumoney 
+# react-native-payumoney
 
 <img src='https://img.shields.io/badge/license-MIT-blue.svg' />  <a href="https://www.npmjs.com/package/react-native-payumoney"><img alt="npm dowloads" src="https://img.shields.io/npm/dm/react-native-payumoney.svg"/></a> <a href="https://www.npmjs.com/package/react-native-payumoney"><img alt="npm version" src="https://badge.fury.io/js/react-native-payumoney.svg"/></a> [![Build Status](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney.svg?branch=master)](https://travis-ci.org/Suraj-Tiwari/react-native-payumoney) [![Greenkeeper badge](https://badges.greenkeeper.io/Suraj-Tiwari/react-native-payumoney.svg)](https://greenkeeper.io/)
 ___
@@ -73,7 +73,7 @@ fetch('https://www.example.com/payu-hash.php', {
         PayuMoney.pay(options).then((d) => {
             console.log(d); // WIll get a Success response with verification hash
         }).catch(e => {
-            console.log(e); //In case of failture 
+            console.log(e); //In case of failture
         });
     })
 ```
@@ -83,9 +83,9 @@ Server side function to get Hash Key
 ```php
 function makeHash($key, $txnid, $amount, $productinfo, $firstname, $email){
     $salt = "XXXXXX"; //Please change the value with the live salt for production environment
-    
+
     $payhash_str = $key . '|' . checkNull($txnid) . '|' . checkNull($amount) . '|' . checkNull($productinfo) . '|' . checkNull($firstname) . '|' . checkNull($email) . '|||||||||||' . $salt;
-    
+
     $hash = strtolower(hash('sha512', $payhash_str));
     return $hash;
 }
@@ -108,6 +108,16 @@ TypeError:Cannot read property 'makePayment' of undefined question
 
 Make sure you have linked library `react-native link react-native-payumoney`
 See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#issuecomment-409661804)
+
+
+```json
+{success: error}
+```json
+
+This is very common error, when your server side hash is calculated in-correctly or
+when trying to use *Web Merchant KEY + SALT* on sandbox in Android  
+Please use Following KEY, SALT, MERCHANT ID for sandbox usage 
+
 
 ## Running example
 
