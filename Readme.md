@@ -111,8 +111,8 @@ See [Issue #2](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/2#i
 
 
 ```json
-{success: error}
-```json
+{ success: error }
+```
 
 This is very common error, when your server side hash is calculated in-correctly or
 when trying to use *Web Merchant KEY + SALT* on sandbox in Android  
@@ -122,7 +122,7 @@ Please use Following KEY, SALT, MERCHANT ID for sandbox usage
   MID : 4934580
   Key : rjQUPktU
   Salt : e5iIg1jwi8
-```js
+```
 
 Below is the test card details for doing a test transaction in the testing mode.
 
@@ -131,7 +131,7 @@ Below is the test card details for doing a test transaction in the testing mode.
   Expiry - 05/2020
   CVV - 123
   Name - Test
-```js
+```
 
 ## Running example
 
