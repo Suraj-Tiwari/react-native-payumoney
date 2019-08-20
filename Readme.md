@@ -136,7 +136,7 @@ Below is the test card details for doing a test transaction in the testing mode.
 
 This can be solved by adding below's line after application tag in android\app\src\main\AndroidManifest.xml
 
-```js
+```xml
   <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 ```
 ## Running example
