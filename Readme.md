@@ -132,6 +132,13 @@ Below is the test card details for doing a test transaction in the testing mode.
   Name - Test
 ```
 
+> SDK Crash on Android 9 API 28
+
+This can be solved by adding below's line after application tag in android\app\src\main\AndroidManifest.xml
+
+```js
+  <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+```
 ## Running example
 
 ### 1. Install dependencies
