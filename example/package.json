@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react": "16.4.2",
-    "react-native": "0.60.1",
+    "react-native": "0.60.6",
     "react-native-payumoney": "https://github.com/Suraj-Tiwari/react-native-payumoney.git"
   },
   "devDependencies": {
