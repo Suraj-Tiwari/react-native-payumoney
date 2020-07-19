@@ -1,17 +1,69 @@
 {
-  "license": "MIT",
-  "main": "PayuMoney.js",
   "name": "react-native-payumoney",
-  "author": "Suraj Tiwari",
-  "description": "Payumoney React-native Library for android",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Suraj-Tiwari/react-native-payumoney.git"
-  },
-  "keywords": [
-    "react-native",
-    "payumoney",
-    "payments"
+  "version": "1.0.0",
+  "description": "React native wrapper for payumoney sdk",
+  "homepage": "https://github.com/Suraj-Tiwari/react-native-payumoney#readme",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Suraj Tiwari <surajtiwari020@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "android",
+    "ios",
+    "lib",
+    "react-native-payumoney.podspec",
+    "!.DS_Store",
+    "!.gradle",
+    "!.idea",
+    "!build",
+    "!gradle",
+    "!*.iml",
+    "!gradlew",
+    "!gradlew.bat",
+    "!local.properties",
+    "!project.xcworkspace",
+    "!xcshareddata",
+    "!xcuserdata"
   ],
-  "version": "0.0.3"
+  "scripts": {
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "@types/jest": "^24.9.0",
+    "@types/react-native": "^0.61.0",
+    "@types/react-test-renderer": "^16.9.1",
+    "babel-jest": "^24.9.0",
+    "gts": "^1.1.2",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5",
+    "react-test-renderer": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "js-sha512": "^0.8.0"
+  }
 }
