@@ -36,7 +36,7 @@ const DefaultValue = {
     udf8: '',
     udf9: '',
     udf10: '',
-}
+};
 
 interface ValidatorInterface {
     amount: string;

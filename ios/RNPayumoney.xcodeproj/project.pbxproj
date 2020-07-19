@@ -236,6 +236,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../example/ios/Pods/PayUmoney_PnP/**",
+					"$(SRCROOT)/../../../ios/Pods/PayUmoney_PnP/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../example/ios/Pods/Headers/Public/React-Core",
@@ -252,6 +256,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../example/ios/Pods/PayUmoney_PnP/**",
+					"$(SRCROOT)/../../../ios/Pods/PayUmoney_PnP/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../example/ios/Pods/Headers/Public/React-Core",

@@ -79,3 +79,5 @@ typings/
 bkp/
 example/
 
+lib
+yarn.lock

@@ -2,13 +2,12 @@
 //  RNPayumoney.h
 //  RNPayumoney
 //
-//  Copyright © 2019 Suraj Tiwari. All rights reserved.
+//  Copyright © 2020 Suraj Tiwari. All rights reserved.
 //
 
 #import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-@interface RNPayumoney : NSObject <RCTBridgeModule>
-
-+ (void)hello;
-
+@interface RNPayumoney : RCTEventEmitter <RCTBridgeModule>
 @end
+
