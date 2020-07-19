@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="superinfotech.suraj.reactnativepayumoney">
+          package="com.surajtiwari.reactnativepayumoney">
     <application
         android:usesCleartextTraffic="true">
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <activity android:name=".PayActivity" />
     </application>
 </manifest>
