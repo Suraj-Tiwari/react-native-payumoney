@@ -134,6 +134,15 @@ Below is the test card details for doing a test transaction in the testing mode.
   Name - Test // anything
 ```
 
+> Merchant Key missing in release mode
+
+Edit `android/app/proguard-rules.pro` and add 
+```
+-keep class com.surajtiwari.reactnativepayumoney.** { *; }
+```
+see issue [#43](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/43)
+
+
 ## Running example
 
 ### 1. Install dependencies
