@@ -1,6 +1,6 @@
 {
   "name": "react-native-payumoney",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React native wrapper for payumoney sdk",
   "homepage": "https://github.com/Suraj-Tiwari/react-native-payumoney#readme",
   "main": "lib/index.js",
