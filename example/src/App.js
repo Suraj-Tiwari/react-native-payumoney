@@ -33,10 +33,10 @@ const App = () => {
                 '461d4002c1432b3393cf2bfaae7acc4c50601c66568fb49a4a125e060c3bfc0e489290e7c902750d5db3fc8be2f180daf4d534d7b9bef46fa0158a4c8a057b61',
         };
         Payumoney(payData).then((data) => {
-            setPaymentStatus("Success");
+            setPaymentStatus(`Success, code: ${data.code}`);
             console.log(data)
         }).catch((e) => {
-            setPaymentStatus("Failed");
+            setPaymentStatus(`Failed, code: ${e.code}`);
             console.log(e)
         })
     };

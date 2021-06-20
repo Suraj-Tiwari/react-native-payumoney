@@ -29,7 +29,7 @@ RCT_EXPORT_METHOD(pay :(NSString *)data) {
     txnParam.phone = payuData[@"phone"];
     txnParam.email = payuData[@"email"];
     txnParam.amount = payuData[@"amount"];
-    txnParam.environment = payuData[@"isDebug"]?PUMEnvironmentTest:PUMEnvironmentProduction;
+    txnParam.environment = [payuData[@"isDebug"] boolValue]?PUMEnvironmentTest:PUMEnvironmentProduction;
     txnParam.firstname = payuData[@"firstName"];
     txnParam.key = payuData[@"key"];
     txnParam.merchantid = payuData[@"merchantId"];
@@ -55,17 +55,19 @@ RCT_EXPORT_METHOD(pay :(NSString *)data) {
                                             onViewController:RCTPresentedViewController()
                                          withCompletionBlock:^(NSDictionary *paymentResponse, NSError *error, id extraParam) {
             if (error) {
-                [self sendEventWithName:@"PAYU_PAYMENT_FAILED" body:@{@"success": @false}];
+                [self sendEventWithName:@"PAYU_PAYMENT_FAILED" body:@{@"success": @false,@"code":@0}];
             } else {
                 NSString *message;
                 if ([paymentResponse objectForKey:@"result"] && [[paymentResponse objectForKey:@"result"] isKindOfClass:[NSDictionary class]] ) {
                     message = [[paymentResponse objectForKey:@"result"] valueForKey:@"error_Message"];
                     if ([message isEqual:[NSNull null]] || [message length] == 0 || [message isEqualToString:@"No Error"]) {
-                        [self sendEventWithName:@"PAYU_PAYMENT_SUCCESS" body:@{@"response":paymentResponse}];
+                        [self sendEventWithName:@"PAYU_PAYMENT_SUCCESS" body:@{@"response":paymentResponse,@"code":@1}];
+                    }else {
+                        [self sendEventWithName:@"PAYU_PAYMENT_FAILED" body:@{@"success":@false,@"code":@-1}];
                     }
                 }
                 else {
-                    [self sendEventWithName:@"PAYU_PAYMENT_FAILED" body:@{@"success":@false}];
+                    [self sendEventWithName:@"PAYU_PAYMENT_FAILED" body:@{@"success":@false,@"code":@-1}];
                 }
             }
         }];
