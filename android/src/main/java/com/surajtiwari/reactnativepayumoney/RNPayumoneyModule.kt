@@ -72,13 +72,15 @@ class RNPayumoneyModule internal constructor(private val reactContext: ReactAppl
             if (transactionResponse != null && transactionResponse.getPayuResponse() != null) {
                 val payuResponse: String = transactionResponse.getPayuResponse()
                 if (transactionResponse.getTransactionStatus().equals(TransactionResponse.TransactionStatus.SUCCESSFUL)) {
-                    sendEvent(PAYU_PAYMENT_SUCCESS, "{\"response\":$payuResponse}")
+                    sendEvent(PAYU_PAYMENT_SUCCESS, "{\"response\":$payuResponse,\"code\":1}")
                 } else {
-                    sendEvent(PAYU_PAYMENT_FAILED, "{\"success\":false}")
+                    sendEvent(PAYU_PAYMENT_FAILED, "{\"success\":false,\"code\":-1}")
                 }
             } else {
-                sendEvent(PAYU_PAYMENT_FAILED, "{\"success\":false}")
+                sendEvent(PAYU_PAYMENT_FAILED, "{\"success\":false,\"code\":-1}")
             }
+        } else {
+            sendEvent(PAYU_PAYMENT_FAILED, "{\"success\":false,\"code\":0}")
         }
     }
 
