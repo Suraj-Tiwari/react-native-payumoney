@@ -112,7 +112,7 @@ function checkNull($value)
 ### Troubleshooting
 
     
-> { success: 0 } or { success: false }
+## `{ success: 0 } or { success: false }`
 
 This is very common error, when your server side hash is calculated in-correctly or
 when trying to use **Web Merchant KEY + SALT** on sandbox in Android  
@@ -134,7 +134,7 @@ Below is the test card details for doing a test transaction in the testing mode.
   Name - Test // anything
 ```
 
-> Merchant Key missing in release mode
+## Merchant Key missing in release mode
 
 Edit `android/app/proguard-rules.pro` and add 
 ```
@@ -142,6 +142,11 @@ Edit `android/app/proguard-rules.pro` and add
 ```
 see issue [#43](https://github.com/Suraj-Tiwari/react-native-payumoney/issues/43)
 
+## Could not find com.payumoney.sdkui:plug-n-play:1.6.1.
+
+Add `jcenter()` in your android/build.gradle
+
+see [example](https://github.com/Suraj-Tiwari/react-native-payumoney/blob/c366d8ce6db21ddf9c0f62ff95082a2659126cd2/example/android/build.gradle#L35)
 
 ## Running example
 
